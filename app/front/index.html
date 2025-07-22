@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Search bar for entering city names -->
+  <div class="input-div">
+    <input type="text" class="search" id="search" placeholder="Enter city...">
+    <button class="serch-button">
+      <img class="search-icon" src="https://cdn-icons-png.flaticon.com/512/49/49116.png" alt="Search">
+    </button>
+  </div>
+
+  <!-- Weather display section -->
+  <div class="middle-div">
+      <!-- Weather icon (changes based on condition) -->
+      <img class="sun" src="images/smile-sun-cartoon-character.png" alt="Weather Icon">
+      <div class="temp">--°C</div>
+      <div class="city">Search for a city</div>
+  </div>
+
+  <!-- Humidity and wind info -->
+  <div class="buttom-div">
+      <div class="humid-div">
+          <img class="humidity-icon" src="https://static.thenounproject.com/png/2280622-200.png">
+          <div class="humid-text">--% Humidity</div>
+      </div>
+      <div class="wind-div">
+          <img class="wind-icon" src="https://cdn-icons-png.flaticon.com/512/54/54298.png">
+          <div class="wind-text">-- km/h Windspeed</div>
+      </div>
+  </div>
+
+  <!-- Table for weather histor-->
+  <div class="weather-table"></div>
+
+  
+  <script src="index.js"></script>
+
+</body>
+</html>

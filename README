@@ -1,0 +1,72 @@
+# Weather App
+
+A simple Node.js + Express web application to search for weather data by city, store recent searches in a SQLite database, and display the latest results in a responsive table.
+
+## Features
+
+- Search for current weather by city name
+- Weather data fetched from OpenWeatherMap API (API key required)
+- Stores each search in a local SQLite database
+- Displays the 10 most recent searches in a scrollable, responsive table
+- Clean, modern, and mobile-friendly UI
+
+## Requirements
+
+- Node.js (v16 or higher recommended)
+- npm
+- [OpenWeatherMap API key](https://openweathermap.org/api)
+
+## Installation
+
+1. **Clone the repository:**
+   ```sh
+   git clone <your-repo-url>
+   cd Weather
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Set up your OpenWeatherMap API key:**
+   - The API key is hardcoded in `server.js` by default.  
+   - For production, consider using environment variables.
+
+4. **Start the server:**
+   ```sh
+   node app/back/server.js
+   ```
+
+5. **Open the app:**
+   - Go to [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```
+Weather/
+├── app/
+│   ├── back/
+│   │   └── server.js
+│   └── front/
+│       ├── index.html
+│       ├── index.js
+│       ├── styles.css
+│       └── images/
+│           └── ...weather icons...
+├── weather.db
+├── package.json
+└── README.md
+```
+
+## Usage
+
+- Enter a city name in the search bar and press Enter or click the search button.
+- The current weather will be displayed, and your search will be added to the table below.
+- The table shows the 10 most recent searches; scroll to see older entries.
+
+## Notes
+
+- Make sure the `images/` folder contains all required weather icons.
+- The database file `weather.db` will be created automatically in the project root.
+- For development, you can restart the server with `nodemon` for auto-

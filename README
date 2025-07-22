@@ -47,14 +47,14 @@ A simple Node.js + Express web application to search for weather data by city, s
 Weather/
 ├── app/
 │   ├── back/
-│   │   └── server.js
+│       ├── index.html
+│       ├── weather.db
 │   └── front/
 │       ├── index.html
 │       ├── index.js
 │       ├── styles.css
 │       └── images/
 │           └── ...weather icons...
-├── weather.db
 ├── package.json
 └── README.md
 ```

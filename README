@@ -34,6 +34,7 @@ A simple Node.js + Express web application to search for weather data by city, s
    - For production, consider using environment variables.
 
 4. **Start the server:**
+   
    ```sh
    node app/back/server.js
    ```
@@ -48,7 +49,7 @@ Weather/
 ├── app/
 │   ├── back/
 │       ├── index.html
-│       ├── weather.db
+│       └── weather.db
 │   └── front/
 │       ├── index.html
 │       ├── index.js
